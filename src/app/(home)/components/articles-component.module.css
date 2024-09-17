@@ -1,0 +1,89 @@
+@import "../../globals.css";
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 90px 200px;
+    /* Adjusted for better responsiveness */
+    background-color: var(--light-background-color);
+    box-sizing: border-box;
+}
+
+.heading-wrapper {
+    max-width: 690px;
+    margin: 0 auto;
+    /* Center heading */
+    text-align: center;
+    /* Center align heading text */
+}
+
+.main-heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.09px;
+    letter-spacing: -2px;
+    color: #1B1743;
+}
+
+.cards-wrapper {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Wrap to new lines if needed */
+    gap: 20px;
+    /* Adjust gap for better spacing */
+    justify-content: center;
+}
+
+@media (min-width: 1200px) {
+    .main-container {
+        padding: 90px 200px;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* Wrap to new lines if needed */
+        gap: 20px;
+        /* Adjust gap for better spacing */
+        justify-content: center;
+    }
+}
+
+/* Medium screens */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .main-container {
+        padding: 60px 150px;
+        /* Adjusted padding for medium screens */
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Wrap to new lines if needed */
+        gap: 20px;
+        /* Adjust gap for better spacing */
+        justify-content: center;
+    }
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+    .main-container {
+        padding: 30px 20px;
+        /* Adjusted padding for small screens */
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* Wrap to new lines if needed */
+        gap: 20px;
+        /* Adjust gap for better spacing */
+        justify-content: center;
+    }
+}

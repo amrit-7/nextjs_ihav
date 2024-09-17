@@ -1,0 +1,93 @@
+@import "../../globals.css";
+
+.card-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 360px;
+    /* Adjust for card size */
+    margin: 0 auto;
+    /* Center cards in the container */
+}
+
+.card-header {
+    width: 100%;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-header-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.cardBodyLeftHeading,
+.cardBodyRightHeading {
+    font-size: 14px;
+}
+
+.cardBodyLeftHeading {
+    font-weight: 500;
+    color: var(--primary-blue);
+}
+
+.cardBodyRightHeading {
+    font-weight: 400;
+    color: var(--light-text);
+}
+
+.cardBodyLeftParagraph {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cardBodyParagraph {
+    font-size: 18px;
+    color: var(--light-text);
+}
+
+.btn {
+    width: 100%;
+    padding: 8px 24px;
+    border-radius: 8px;
+    background-color: var(--primary-blue);
+    color: white;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn .MuiSvgIcon-root {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        max-width: 100%;
+    }
+
+    .main-heading {
+        font-size: 36px;
+    }
+
+    .cardBodyLeftParagraph {
+        font-size: 18px;
+    }
+
+    .cardBodyParagraph {
+        font-size: 16px;
+    }
+}

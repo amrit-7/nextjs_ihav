@@ -1,0 +1,134 @@
+@import "../../globals.css";
+
+.main-container {
+    padding: 90px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.09px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: var(--text-color);
+    width: 930px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+    margin-top: 50px;
+    gap: 20px;
+    /* Space between steps */
+}
+
+.step {
+    flex: 1;
+    min-width: 250px;
+    /* Ensures minimum width on smaller screens */
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.step-button-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack buttons vertically by default */
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    /* Space between step buttons */
+    margin-top: 50px;
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.step-item::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #e6e6e6;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.step-item:last-child::after {
+    display: none;
+}
+
+.step-header {
+    background-color: var(--dark-blue);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    max-width: 95px;
+    text-align: center;
+    z-index: 1;
+}
+
+.card-title {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    color: var(--text-color);
+}
+
+.card-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: var(--light-text);
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main-container {
+        padding: 90px 20px;
+    }
+
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .step-button-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        gap: 10px;
+        /* Reduce space between step buttons on smaller screens */
+    }
+
+    .step-item {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 36px;
+        width: 100%;
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* variables.css */
+
+:root {
+    --primary-blue: #0058FF;
+    --light-blue: #10DDE8;
+    --dark-blue: #00324B;
+    --blue-variant: #02004B;
+    --secondary-color: #6c757d;
+    --background-color: #ffffff;
+    --light-background-color: #F1F3F6;
+    --text-color: #1B1743;
+    --light-text: #2A2F32;
+    --font-size-large: 60px;
+    --font-size-medium: 18px;
+    --font-size-small: 13px;
+    --font-weight-bold: 900;
+    --font-weight-medium: 500;
+    --line-height-tight: 1.2;
+    --letter-spacing-tight: -3px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition-duration: 0.3s;
+}

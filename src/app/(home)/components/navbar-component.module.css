@@ -1,0 +1,145 @@
+@import "../../globals.css";
+
+.navbar {
+    background-color: white;
+    color: var(--text-color);
+    /* position: fixed; */
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 0 10px; */
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 87px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logoText {
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: none;
+    color: inherit;
+}
+
+.menuButton {
+    display: none;
+    cursor: pointer;
+}
+
+.navMenu {
+    display: flex;
+    align-items: center;
+}
+
+.showMenu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    z-index: 1001;
+}
+
+.mobileLogoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mobileLogo {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.closeMenuButton {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.navLinks {
+    display: flex;
+    gap: 20px;
+}
+
+.navLink {
+    font-size: 18px;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.navLink:hover,
+.activeLink {
+    color: blue;
+}
+
+.contactAndButton {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contactInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.phoneNumber {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.bookingButton {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.bookingButton:hover {
+    background-color: darkblue;
+}
+
+@media (max-width: 768px) {
+    .menuButton {
+        display: block;
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .contactAndButton {
+        display: none;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        align-items: center;
+    }
+}

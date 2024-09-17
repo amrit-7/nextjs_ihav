@@ -1,0 +1,186 @@
+.hire-component {
+    width: 100%;
+    max-width: 1410px;
+    height: auto;
+    border-radius: 24px;
+    background: #0058FF;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hire-content {
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.hire-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.09px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    color: white;
+}
+
+.hire-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: white;
+    margin-top: 20px;
+}
+
+.hire-button {
+    margin-top: 30px;
+    width: 216px;
+    /* Default width */
+    height: 62px;
+    /* Default height */
+    padding: 16px 25px;
+    /* Default padding */
+    gap: 10px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0058FF;
+    font-weight: 700;
+    font-size: 16px;
+    /* Default font size */
+    text-transform: uppercase;
+    cursor: pointer;
+    box-sizing: border-box;
+    /* Ensure padding is included in the width and height */
+}
+
+/* Responsive Design */
+
+/* For medium screens and below (up to 992px) */
+@media (max-width: 992px) {
+    .hire-button {
+        width: 180px;
+        /* Adjust width */
+        height: 50px;
+        /* Adjust height */
+        padding: 14px 20px;
+        /* Adjust padding */
+        font-size: 14px;
+        /* Adjust font size */
+    }
+}
+
+/* For small screens and below (up to 768px) */
+@media (max-width: 768px) {
+    .hire-button {
+        width: 160px;
+        /* Adjust width */
+        height: 45px;
+        /* Adjust height */
+        padding: 12px 18px;
+        /* Adjust padding */
+        font-size: 13px;
+        /* Adjust font size */
+    }
+}
+
+/* For extra-small screens and below (up to 576px) */
+@media (max-width: 576px) {
+    .hire-button {
+        width: 140px;
+        /* Adjust width */
+        height: 40px;
+        /* Adjust height */
+        padding: 10px 15px;
+        /* Adjust padding */
+        font-size: 12px;
+        /* Adjust font size */
+    }
+}
+
+.mockup-image {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    background-color: #0049B7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+    .hire-component {
+        padding: 60px;
+    }
+
+    .hire-title {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hire-component {
+        padding: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hire-title {
+        font-size: 36px;
+    }
+
+    .mockup-image {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hire-component {
+        padding: 30px;
+    }
+
+    .hire-title {
+        font-size: 32px;
+    }
+
+    .hire-button {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .mockup-image {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hire-component {
+        padding: 20px;
+    }
+
+    .hire-title {
+        font-size: 28px;
+    }
+
+    .hire-subtitle {
+        font-size: 16px;
+    }
+
+    .hire-button {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .mockup-image {
+        font-size: 18px;
+    }
+}

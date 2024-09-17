@@ -1,0 +1,148 @@
+/* info-section-component.module.css */
+
+.infoSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+}
+
+.infoContent {
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infoTitle {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -2px;
+    line-height: 1.2;
+}
+
+.infoDescription {
+    width: 930px;
+    margin: 40px;
+}
+
+.infoDescription p {
+    margin: 20px 0;
+}
+
+.businessSection {
+    background-color: #F1F3F6;
+    padding: 100px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.businessTitle {
+    font-size: 48px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 512px;
+}
+
+.cardContainer {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+
+    .infoSection,
+    .businessSection {
+        padding: 80px;
+    }
+
+    .infoTitle,
+    .businessTitle {
+        font-size: 42px;
+    }
+
+    .infoDescription {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .infoSection,
+    .businessSection {
+        padding: 60px;
+    }
+
+    .infoTitle,
+    .businessTitle {
+        font-size: 36px;
+    }
+
+    .infoDescription {
+        width: 85%;
+    }
+
+    .cardContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .infoSection,
+    .businessSection {
+        padding: 50px 20px;
+    }
+
+    .infoContent,
+    .businessTitle {
+        width: 100%;
+    }
+
+    .infoTitle,
+    .businessTitle {
+        font-size: 32px;
+    }
+
+    .infoDescription {
+        width: 100%;
+    }
+
+    .cardContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .infoSection,
+    .businessSection {
+        padding: 40px 15px;
+    }
+
+    .infoTitle,
+    .businessTitle {
+        font-size: 28px;
+    }
+
+    .infoDescription {
+        width: 100%;
+    }
+
+    .cardContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}

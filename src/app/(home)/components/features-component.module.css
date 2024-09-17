@@ -1,0 +1,77 @@
+@import "../../globals.css";
+
+.main-container {
+    background-color: var(--light-background-color);
+    padding: 90px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.09px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    /* Center align for better readability */
+    width: 100%;
+    max-width: 807px;
+    /* Ensure it doesn't get too wide on larger screens */
+    margin-bottom: 40px;
+    /* Add space between title and cards */
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 20px;
+    /* Add space between cards */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .cardContainer {
+        justify-content: center;
+        /* Center cards on medium screens */
+    }
+
+    .main-title {
+        font-size: 36px;
+        /* Smaller font size for medium screens */
+        text-align: center;
+        /* Center align the title */
+    }
+
+    .main-container {
+        background-color: var(--light-background-color);
+        padding: 0px 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .cardContainer {
+        flex-direction: column;
+        /* Stack cards vertically on small screens */
+        align-items: center;
+        /* Center align the cards */
+    }
+
+    .main-container {
+        background-color: var(--light-background-color);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-title {
+        font-size: 28px;
+        /* Smaller font size for small screens */
+    }
+}

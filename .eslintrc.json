@@ -1,0 +1,34 @@
+{
+  "extends": ["next/core-web-vitals"],
+
+  "plugins": ["@typescript-eslint/eslint-plugin", "check-file"],
+
+  "rules": {
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "typeLike",
+        "format": ["StrictPascalCase"],
+        "leadingUnderscore": "forbid"
+      },
+      {
+        "selector": "function",
+        "format": ["StrictPascalCase", "strictCamelCase"],
+        "leadingUnderscore": "forbid"
+      },
+      {
+        "selector": "variable",
+        "format": ["StrictPascalCase", "strictCamelCase", "UPPER_CASE"],
+        "leadingUnderscore": "forbid"
+      }
+    ],
+
+    "check-file/filename-naming-convention": [
+      "error",
+      {
+        "**/*.{jsx,tsx}": "KEBAB_CASE",
+        "**/*.{js,ts}": "KEBAB_CASE"
+      }
+    ]
+  }
+}

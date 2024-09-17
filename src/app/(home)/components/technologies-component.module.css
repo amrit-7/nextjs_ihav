@@ -1,0 +1,187 @@
+@import "../../globals.css";
+
+.main-container {
+    padding: 90px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.09px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: var(--text-color);
+    width: 930px;
+}
+
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows items to wrap on smaller screens */
+    margin-top: 40px;
+    width: 100%;
+    justify-content: space-around;
+    /* Center items and add space between them */
+}
+
+.technology-card {
+    width: 151px;
+    height: 151px;
+    border-radius: 16px 16px 48px 16px;
+    border: 1px solid #D4DBE0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    /* Add some margin around each card */
+}
+
+.card-title {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+}
+
+.subtitle-heading {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.2px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.numbers-container {
+    margin-top: 80px;
+    width: 100%;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows items to wrap on smaller screens */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    gap: 20px;
+    /* Space between number items */
+}
+
+.number-content {
+    display: flex;
+    flex-direction: column;
+    /* Stack value and title vertically */
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    /* Adjust width as needed */
+}
+
+.number-value {
+    color: var(--text-color);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77.45px;
+    letter-spacing: -0.03em;
+}
+
+.number-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main-container {
+        padding: 90px 20px;
+    }
+
+    .technology-list {
+        display: grid;
+        /* Allows items to wrap on smaller screens */
+        margin-top: 40px;
+        width: 100%;
+        justify-content: space-around;
+        grid-template-columns: repeat(4, 1fr);
+        /* Center items and add space between them */
+    }
+
+    .main-heading {
+        font-size: 36px;
+        width: 100%;
+    }
+
+    .technology-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .technology-card {
+        /* width: 120px; */
+        /* Adjust width for smaller screens */
+        /* height: 120px; */
+        /* Adjust height for smaller screens */
+    }
+
+    .numbers {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .number-content {
+        width: 200px;
+        /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 28px;
+    }
+
+    .technology-list {
+        display: grid;
+        /* Allows items to wrap on smaller screens */
+        margin-top: 40px;
+        width: 100%;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        /* Center items and add space between them */
+    }
+
+    .technology-card {
+        /* width: 100px; */
+        /* Further adjust width for very small screens */
+        /* height: 100px; */
+        /* Further adjust height for very small screens */
+    }
+
+    .numbers {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .number-value {
+        font-size: 48px;
+        /* Adjust font size for very small screens */
+    }
+
+    .number-title {
+        font-size: 14px;
+        /* Adjust font size for very small screens */
+    }
+}

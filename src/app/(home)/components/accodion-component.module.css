@@ -1,0 +1,45 @@
+.accordion {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    max-width: 1170px;
+    box-sizing: border-box;
+}
+
+.accordion-header {
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-weight: 600;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.accordion-header h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.accordion-content {
+    padding: 15px;
+    border-top: none;
+    animation: fadein 0.3s;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

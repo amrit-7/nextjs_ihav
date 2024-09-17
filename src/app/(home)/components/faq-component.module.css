@@ -1,0 +1,112 @@
+@import "../../globals.css";
+
+.main-container {
+    padding: 90px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading {
+    font-size: 36px;
+    /* Adjust font size for better readability */
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: var(--text-color);
+    width: 100%;
+    max-width: 1170px;
+    /* Ensure it doesn't exceed max-width */
+}
+
+.accordion-container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+    .accordion-container {
+        max-width: 100%;
+    }
+
+    .main-container {
+        padding: 50px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.accordion {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.accordion-header {
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-weight: 600;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.accordion-header h3 {
+    margin: 0;
+    font-size: 20px;
+    /* Adjust font size */
+}
+
+.accordion-content {
+    padding: 15px;
+    border-top: none;
+    animation: fadein 0.3s;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.icon {
+    font-size: 20px;
+    /* Adjust icon size */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 28px;
+        line-height: 36px;
+        padding: 60px 15px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .accordion-header h3 {
+        font-size: 18px;
+    }
+
+    .icon {
+        font-size: 18px;
+    }
+}

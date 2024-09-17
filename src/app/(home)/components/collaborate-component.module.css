@@ -1,0 +1,27 @@
+@import "../../globals.css";
+
+.main-container {
+    padding: 100px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    /* Ensures padding doesn't overflow */
+}
+
+/* Medium screens */
+@media (max-width: 1024px) {
+    .main-container {
+        padding: 80px 100px;
+        /* Adjusted padding for tablets */
+    }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 60px 20px;
+        /* Reduced padding for mobile screens */
+    }
+}
