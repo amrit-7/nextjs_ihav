@@ -5,22 +5,13 @@ module.exports = {
     config.module.rules.push({
       test: /\.css$/,
       exclude: /\.module\.css$/,
-      use: [options.defaultLoaders.babel, "style-loader", "css-loader"],
+      use: [options.defaultLoaders.babel],
     });
 
     // Include CSS Modules processing
     config.module.rules.push({
       test: /\.module\.css$/,
-      use: [
-        options.defaultLoaders.babel,
-        "style-loader",
-        {
-          loader: "css-loader",
-          options: {
-            modules: true,
-          },
-        },
-      ],
+      use: [options.defaultLoaders.babel],
     });
 
     return config;
